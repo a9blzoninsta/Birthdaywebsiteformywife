@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blaze Panels — Demo Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="bg-anim"></div>
+  <header class="topbar">
+    <div<div <div class="logo logo-red">BLAZE PANELS</div> <div class="tag">FF Panels • Demo Store</div>
+    </div>
+
+    <div class="controls">
+      <input id="search" placeholder="Search panels or tags..." />
+      <select id="sort">
+        <option value="popular">Sort: Popular</option>
+        <option value="price-low">Price: Low → High</option>
+        <option value="price-high">Price: High → Low</option>
+      </select>
+      <button id="loginBtn">Login / Signup</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h4>Filters</h4>
+      <button class="chip" data-cat="all">All</button>
+      <button class="chip" data-cat="starter">Starter</button>
+      <button class="chip" data-cat="pro">Pro</button>
+      <button class="chip" data-cat="elite">Elite</button>
+
+      <hr>
+      <h4>Price Range</h4>
+      <input type="range" id="priceRange" min="0" max="3000" value="3000">
+      <div class="meta">Max: ₹<span id="priceMax">3000</span></div>
+    </aside>
+
+    <section class="main">
+      <div class="hero">
+        <div>
+          <h2>Featured Panels</h2>
+          <p class="muted">Demo checkout • Mock UPI • Firebase/Airtable hooks included (replace keys)</p>
+        </div>
+        <div class="chart">
+          <canvas id="priceLine" height="80"></canvas>
+        </div>
+      </div>
+
+      <div class="grid" id="products"></div>
+
+      <div class="chart-card">
+        <h4>Price Breakdown</h4>
+        <canvas id="priceBar" height="80"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal" class="modal hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html><div class="footer-text">Blaze Boys</div>
+
+<div class="footer-subtext">Powered by Blaze Boys Group</div>
